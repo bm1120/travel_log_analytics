@@ -1,0 +1,5 @@
+csv_data/
+.DS_Store
+notebooks/.ipynb_checkpoints/
+notebooks/__pycache__
+notebooks/.Trash-0
