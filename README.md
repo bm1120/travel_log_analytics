@@ -28,6 +28,7 @@ tralvel_log 분석환경 구축 공유용
    ```
 ### 2. 분석환경 이미지(jupyter) 생성
  - recsy 기반 jupter lab 환경
+ - notebooks 폴더 working directory로 설정
  - 이전 terminal창에서 config/jupyter 폴더로 이동
    ```
    cd ..\jupyter
@@ -36,7 +37,7 @@ tralvel_log 분석환경 구축 공유용
    ```
    docker build . -t jupyter -f .\Dockerfile.dockerfile
    ```
-### 3.분석환경 컨테이너 생성
+### 3. 분석환경 컨테이너 생성
  - Ai-hub의 해당 데이터 다운로드(train 데이터 기준)(1,2번 진행전에 진행 권장)
    - 현재 TL_csv, Other 데이터만 기준으로 적재
    - 다운로드 후 확장자.zip 이후 부분(.data0) 제거
@@ -69,4 +70,7 @@ tralvel_log 분석환경 구축 공유용
    ```
    docker-compose stop
    ``` 
- - 세팅 확인시 주피터 접속(http://localhost:8888)후 sql_test.ipynb 노트북 내의 코드들 실행
+
+### 4. 테스트
+ - DB 세팅 확인시 주피터 접속(http://localhost:8888 ) sql_test.ipynb 노트북 내의 코드 실행
+ - 샘플 모델 코드 확인시 model_analysis.ipynb 노트북 내의 코드 실행
