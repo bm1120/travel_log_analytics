@@ -2,6 +2,14 @@
 tralvel_log 분석환경 구축 공유용
 - 해당 환경을 구축하려면 docker가 설치되어있어야 합니다(https://www.docker.com/)
 - AI-hub 데이터(국내여행로그 데이터-수도권, https://www.aihub.or.kr/aihubdata/data/view.do?currMenu=115&topMenu=100&aihubDataSe=data&dataSetSn=71776) 분석 환경 구축용
+  - 해당 주제 관련 데이터(국내여행로그 데이터) 모두 추가 형태로 변경(2024-11-04)
+  - 해당 데이터중 validation E 이동수단소비내역 e_e000920 데이터 고유키 안맞음 -> 강제로 PAYMENT_SEQ 변경 필요
+  - csv 폴더 구조(각 파일을 해당 구조에 맞게 이동 후 실행 필요)
+  ```
+  csv_data/
+  ├── train/
+  └── val/
+```
 - 해당 데이터의 샘플 AI모델(여행로그 장소 추천 고도화)의 구동을 위해 환경 구축(recsys)
 - recsys를 기반으로 파이썬 분석환경 세팅(jupyter)
 - 현재 해당 데이터중 사진 데이터와 gps관련데이터를 제외한 나머지 정형 데이터 postgreDB 적재(postgres)
