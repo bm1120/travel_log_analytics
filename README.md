@@ -9,7 +9,7 @@ tralvel_log 분석환경 구축 공유용
   csv_data/
   ├── train/
   └── val/
-```
+  ```
 - 해당 데이터의 샘플 AI모델(여행로그 장소 추천 고도화)의 구동을 위해 환경 구축(recsys)
 - recsys를 기반으로 파이썬 분석환경 세팅(jupyter)
 - 현재 해당 데이터중 사진 데이터와 gps관련데이터를 제외한 나머지 정형 데이터 postgreDB 적재(postgres)
